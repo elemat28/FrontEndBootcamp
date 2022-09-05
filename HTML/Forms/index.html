@@ -3,33 +3,47 @@
     <head>
         <meta charset='UTF-8'/>
 
-        <title>Main Page</title>
+        <title>Contact Page</title>
     </head>
     <body>
         <header>
-            <h1>My Virtual Pet Shrine</h1>
+            <h1>Contact me</h1>
         </header>
-        <img src = "../../RESOURCES/STATIC/catphoto.jpg" alt='A Stock Photo of a cat' width='600px'>
+        
+        <p>if You want to talk about anything cute-cat related feel free to contact me using the form below!</p>
 
-        <p>Source: https://stocksnap.io/photo/cat-laying-LPZFCLQN45</p>
+        <form action=''>
+            <label for='commentContent'>What would You like to tell me?</label>
+            <br>
+            <textarea id="w3review" name="w3review" rows="6" cols="50" required></textarea><br>
+            <fieldset style='width: 20%;'>
+                <legend>Your Details:</legend>
+                <label for='firstName'>First Name:</label>
+                <input type='text' id='firstName' name='firstName' required><br>
+                <label for='lastName'>Last Name:</label>
+                <input type='text' id='lastName' name='lastName'><br>
+                <br>
+                <label for='emailAddress'>Email:</label>
+                <br>
+                <input type='email' id='emailAddress' name='emailAddress' required><br>
 
-        <h3>Welcome to the website dedicated to my cat! But, since I don't have a cat, this one is imaginary!</h3>
-        <p>The main reasons I like cats:</p>
-        <ol>
-            <li>Cute</li>
-            <li>They PURR!</li>
-            <li>Low maintenance!</li>
-        </ol>
-        <h4>As You can see there isn't much in terms or reasons for disliking cats!</h4>
-        <p>As such, please don't talk to me if You:</p>
-        <ul>
-            <li>Dislike cats</li>
-            <li>Have cat allergies</li>
-        </ul>
-        <span>If You would like to learn more about cats You can read about them on Wikipedia, by clicking
-        <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">
-            <span>here</span>
-        </a>
-        <span>!</span>
+                <br>
+                <span>
+                    Are You over 18?
+                    <br>
+                </span>
+                <span style='font-size: small;'>(I need to know if I can swear at you if You don't like cats!)</span>
+                <br>
+                <input type='radio' name='isAdult' id='adult' value='Yes' required>
+                <label for='adult'>Yes</label>
+                <input type='radio' name='isAdult' id='minor' value='No' >
+                <label for='minor'>No</label>
+                <br>
+            </fieldset>
+            <br>
+            <input type='submit' value='Submit Comment'>
+
+
+        </form>
     </body>
 </html>
