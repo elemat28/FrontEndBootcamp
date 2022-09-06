@@ -1,0 +1,43 @@
+body{
+    min-width: fit-content;
+    min-height: inherit;
+    
+    background-color: rgb(244, 190, 171);
+}
+body div#headerBar  {
+    background-color: rebeccapurple;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+body div#contentGrid {
+    display: grid; 
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "navArea mainBlock mainBlock mainBlock ."
+      "navArea mainBlock mainBlock mainBlock ."
+      "navArea mainBlock mainBlock mainBlock ."; 
+      object-fit: scale-down;
+}
+body div#navBar {
+    grid-area: navArea;
+    object-fit: scale-down;
+    margin-bottom: 5%;
+    margin-top: 3%;
+    min-height: fit-content;
+    border: 50px;
+}
+
+body div#voidBlock {
+    grid-area: mainBlock;
+    min-width: max-content;
+    min-height: 720px;
+    margin:0%;
+
+}
+

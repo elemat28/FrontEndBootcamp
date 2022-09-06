@@ -2,19 +2,40 @@
 <html lang='en'>
     <head>
         <meta charset='UTF-8'/>
-
         <title>Pages Index</title>
-    </head>
-    <body>
-        <header>
-            <h1>Home page for accesseing each lesson</h1>
-        </header>
+        <link rel="stylesheet" href='CSS/base.css'>
+        <link rel="stylesheet" href='CSS/navigationBar.css'>
+        <script src='JS/uiLoader.js'></script>
         
-        <nav>
-            <ul>
-                <li><a href="./HTML/FirstPage/index.html">First Page</a></li>
-                <li><a href="./HTML/Forms/index.html">Get in Touch(forms)</a></li>
-            </ul>
-        </nav>
+    </head>
+    <body onload="javascript:loadNavBar()">
+        <div id='headerBar'>
+        <header>
+            <h1>Home page for accessing each lesson</h1>
+        </header>
+    </div>
+    <div id='contentGrid'>
+        <div id='navBar'>
+            <head>
+            </head>
+            <div class='navBar'>
+                <nav>
+                    <Header>
+                        <a href='index.html'>Quick Access Menu</a>
+                    </Header>
+                    <ul>
+                        <li class='navOption'><a href='HTML/FirstPage/index.html'>First Page</a></li>
+                        <li class='navOption'><a href='HTML/Forms/index.html'>Get in Touch(forms)</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+        <div id='voidBlock'>
+            <br>
+        </div>
+    </div>
+    
     </body>
 </html>
