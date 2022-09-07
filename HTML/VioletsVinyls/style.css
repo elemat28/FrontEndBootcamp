@@ -1,0 +1,56 @@
+/* Write your CSS here - remember to add Id's or classes to the HTML file */
+body {
+    background-color: black;
+    /* sets default font and font color for all the content on the page*/
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    color: white;
+}
+h1 {
+    background-image: url("img/Records.jpg");
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#selection {
+    background-color: #ef8354;
+}
+
+#selling {
+    background-color: #0e7c7b;
+}
+
+#liveMusic {
+    background-color: #9c538b;
+}
+
+
+
+main p {
+    font-size: 16px;
+}
+
+main img {
+    width: 500px;
+}
+
+footer #rights {
+    text-align: center;
+}
+
+
+.socialmedia_Facebook {
+    text-decoration: none;
+}
+.socialmedia_Facebook:link {
+    color: #ef8354;
+}
+.socialmedia_Facebook:hover {
+    color: #9c528b;
+}
