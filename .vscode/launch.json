@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open Violets-Vinyls.html",
-            "file": "d:\\coding\\FrontEndBootcamp\\FrontEndBootcamp\\HTML\\VioletsVinyls\\Violets-Vinyls.html"
+            "file": "d:\\coding\\FrontEndBootcamp\\FrontEndBootcamp\\HTML\\HubbleCard\\index.html"
         }
     ]
 }

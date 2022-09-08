@@ -1,0 +1,64 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 5px 20px 20px rgba(0,0,0,0.5);
+  }
+  
+  
+  .card img {
+    height: 264px;
+    /*
+    Width of the imsge isn't explicititly mentioned but leaving it unset results in the image overflowing.
+    Two solutions tried was simply using overflow-x:hide which worked and maintaned the aspect ratio BUT
+    it didn't look like our source material so to make it look as close to the source as possible I went for
+    matching it to the parent container instead
+    */
+    width: inherit;
+    border-radius: 20px 20px 0 0;
+  }
+  
+  .card-text {
+    height: 240px;
+    margin: 0 15px 0 15px;
+    /*
+    Distance to the sides is only specified once
+     but that results is the H2 tag content not getting split into two lines like in the source material
+     to remedy margin gets inherited from the parent container which results in "margin in margin"
+     of 30px that produces result looking just like the source image.
+     And all that without specifying the margin twice
+    */
+  }
+  
+  .card-text .category {
+    color: blue;
+    font-size: 12px;
+    margin: inherit;
+    margin-top: 14px;
+    margin-bottom: 7px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: inherit;
+    margin-top: 7px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text p {
+    /*
+    Font size isn't specified on the photo but 14px results in the text looking like in 
+    the source photo
+    */
+    font-size: 14px; 
+    margin: inherit;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(63, 63, 63);
+  }
